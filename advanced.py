@@ -15,10 +15,10 @@ kernel = np.ones((5,5), np.uint8)
 dilated_edges = cv2.dilate(edges, kernel, iterations=1)
 
 # smoothing
-color = cv2.bilateralFilter(img, 9, 80, 20)
+color = cv2.bilateralFilter(img, 9, 100, 20)
 
 # 카툰 스타일 적용
-cartoon = cv2.stylization(color, sigma_s=100, sigma_r=0.3)
+cartoon = cv2.stylization(color, sigma_s=150, sigma_r=0.3)
 
 # edge 적용
 cartoon = cv2.bitwise_and(cartoon, cartoon, mask=dilated_edges)
