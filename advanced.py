@@ -24,6 +24,7 @@ cartoon = cv2.stylization(color, sigma_s=150, sigma_r=0.3)
 cartoon = cv2.bitwise_and(cartoon, cartoon, mask=dilated_edges)
 
 # 결과 출력
+cv2.imwrite('output.jpg', cartoon)
 cv2.imshow("Cartoon", cartoon)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
