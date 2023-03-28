@@ -10,7 +10,7 @@ pip install numpy
 
 - `default.py` : This is the code written as suggested by ChatGPT.
 - `advanced.py` : I advanced "default.py" to convert photos to a better looking cartoon style.
-- `input.jpg` : You can change it to any image you want. (Don't rename the image.)
+- `input.jpg` : You can change it to any image you want.
 - `output.jpg` : The resulting image of "advanced.py" is saved as "output.jpg".
 
 ## Results Example
